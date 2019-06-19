@@ -9,7 +9,7 @@ const reducer = (state = initialState, action) => {
 
   switch (action.type) {
     case 'ENTER_BATTLE':
-    console.log(action)
+
     const isBattleMode = true
     const { enemy, player } = action
     enemy.health = 100

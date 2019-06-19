@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import BattleSlut from './battle/BattleSlut'
 
 const BattleArena = props => {
-  console.log('bArena props',props)
+
   const { enemy, player } = props.battleState
 
   return (

@@ -2,12 +2,13 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { mapStateToProps } from '../store/helpers'
 import PlayerService from '../services/PlayerService'
+import spriteSheet from '../assets/spriteSheet.json' 
 
 const sprite = {
   height: 32,
   width: 32
 }
-const spriteSheet = 'https://i.ibb.co/L9NkvJ7/815292539c39d7fae558339ce73f0142.png'
+//const spriteSheet = 'https://i.ibb.co/L9NkvJ7/815292539c39d7fae558339ce73f0142.png'
 
 const Player = props => {
   const getSprite = () => {
@@ -19,7 +20,7 @@ const Player = props => {
   return (
     <div style={props.s}  >
       <div style={{
-        backgroundImage: `url(${spriteSheet})`,
+        backgroundImage: `url(${spriteSheet.gokuPlayer})`,
         backgroundPosition: getSprite(),
         objectFit: 'contain',
         width: 34,

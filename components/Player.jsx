@@ -25,6 +25,7 @@ const Player = props => {
         objectFit: 'contain',
         width: 27,
         height: 33,
+        margin:'0 auto'
       }}></div>
     </div>
   )

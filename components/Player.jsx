@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { mapStateToProps } from '../store/helpers'
 import PlayerService from '../services/PlayerService'
-import spriteSheet from '../assets/spriteSheet.json' 
+import spriteSheet from '../assets/spritesSheet.json' 
 
 const sprite = {
   height: 32,

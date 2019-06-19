@@ -27,7 +27,7 @@ const Map = props => {
     switch (value) {
       case 0:
         return <img style={getTdStyle()}
-          src='https://i.ytimg.com/vi/9TlmBmMonIc/maxresdefault.jpg' />
+          src={grassImg} />
       case 1:
         return <Player s={getTdStyle()} />
       case 20: 

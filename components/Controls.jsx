@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { mapStateToProps } from '../store/helpers'
+import { mapStateToProps, arraysEqual } from '../store/helpers'
 import PlayerService from '../services/PlayerService'
 import { checkBouderies } from '../services/MapService'
 
@@ -9,7 +9,8 @@ const Controls = props => {
     const dir = e.target.value
     const oldPos = props.playerState.pos
     const map = props.mapState.map
-    const pos = PlayerService.getNewPos(oldPos, dir)
+    const pos = PlayerService.getNewPos(oldPos, dir, map)
+    if(arraysEqual(oldPos,pos)) return
     const slutVal = map[pos[0]][pos[1]]
     if(typeof slutVal ==='object' && slutVal.value === 20){
       //console.log('hit enemy',slutVal, props)

@@ -1,6 +1,17 @@
+const isOutOfBoundries = (x, y, dir, map) => {
+  console.log({ x, y, dir, map })
+  if (
+    (y < 1 && dir === 'up') ||
+    (y > map.length - 2 && dir === 'down') ||
+    x < 0
 
-const getNewPos = (oldPos, dir) => {
+  ) return true
+  return false
+}
+
+const getNewPos = (oldPos, dir, map) => {
   const [y, x] = oldPos
+  if (isOutOfBoundries(x, y, dir, map)) return oldPos
   switch (dir) {
     case 'up':
       return [y - 1, x]

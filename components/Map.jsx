@@ -39,9 +39,11 @@ const Map = props => {
     const width = Math.floor(
       window.innerWidth / map[0].length - 3
     )
+    width = Math.max(2, width)
     const height = Math.floor(
       window.innerHeight * 0.7 / map.length
     )
+    height = Math.max(33, height)
     return {
       width, height, textAlign: 'center'
     }

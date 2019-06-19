@@ -23,8 +23,8 @@ const Player = props => {
         backgroundImage: `url(${spriteSheet.gokuPlayer})`,
         backgroundPosition: getSprite(),
         objectFit: 'contain',
-        width: 34,
-        height: 37,
+        width: 27,
+        height: 33,
       }}></div>
     </div>
   )

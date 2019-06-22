@@ -1,10 +1,14 @@
 import React from 'react'
-//import Sprites from '../../assets/spritesSheet.json'
+import Sprites from '../../assets/spritesSheet.json'
 
 export default ({entity}) => {
 
   const { name, health } = entity
-  //console.log(Sprites)
+  console.log(Sprites)
+
+  const isSpritesAviable = true
+  if (typeof(Sprites[name]) !== 'undefined') isSpritesAviable = false
+
 
   return (
     <section style={{display:'flex'}}>

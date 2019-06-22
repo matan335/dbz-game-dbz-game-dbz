@@ -1,10 +1,20 @@
 h1, p {
   font-family: Lato;
 }
+
+img {
+  max-width:100%
+} 
+
 body {
   margin:0;
   padding:0;
   background-color: black;
+  height:100vh;
+}
+
+#root {
+  height: 100vh;
 }
 
 .map {
@@ -21,7 +31,7 @@ body {
 
 .battle-arena {
   width:95vw;
-  height:65vh;
+  height:80%;
   background-color: white;
   margin: 10px auto;
   display:flex;

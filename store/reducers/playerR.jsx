@@ -7,6 +7,7 @@ const initialState = {
   animation: 0,
   level:10,
   name:'goku',
+  
   id:0
 }
 
